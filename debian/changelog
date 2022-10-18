@@ -1,0 +1,32 @@
+ruby-plist (3.2.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 18:58:28 +0100
+
+ruby-plist (3.2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Update the way package was running tests.
+    - Use both rake and ruby-tests.rake.
+  * debian/control: Add line 'Testsuite: autopkgtest-pkg-ruby'
+  * debian/rules: Add check-dependecies
+
+ -- Lucas Albuquerque Medeiros de Moura <lucas.moura128@gmail.com>  Fri, 04 Mar 2016 16:12:49 -0300
+
+ruby-plist (3.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add ruby-test-unit to Build-Depends for ruby2.2.
+  * Update Vcs-Browser to cgit URL and HTTPS.
+  * Bump Standards-Version to 3.9.6 (no further changes).
+
+ -- Sebastien Badia <seb@sebian.fr>  Mon, 20 Apr 2015 00:01:54 +0200
+
+ruby-plist (3.1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #705246)
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 12 Apr 2013 00:19:47 +0200

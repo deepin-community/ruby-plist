@@ -1,0 +1,25 @@
+Source: ruby-plist
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Cédric Boutillier <boutil@debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake
+Standards-Version: 3.9.7
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-plist.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-plist.git
+Homepage: http://plist.rubyforge.org
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-plist
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: all-purpose property list manipulation library
+ Plist is a library to manipulate Property List files, also known as plists.
+ It can parse plist files into native Ruby data structures as well as
+ generating new plist files from your Ruby objects.
